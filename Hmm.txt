@@ -1,0 +1,20 @@
+
+### **2. Systemd Service for Admin Bot**
+
+```bash
+# /etc/systemd/system/admin-token-bot.service
+[Unit]
+Description=Admin Token Management Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/xray/admin
+ExecStart=/usr/bin/python3 /etc/xray/admin/admin_bot.py
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
