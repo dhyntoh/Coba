@@ -9,7 +9,7 @@ echo "🔧 Ultimate VPN Quick Installer"
 echo "📥 Downloading and installing..."
 
 # Download main installer
-if curl -sSL -o /tmp/vpn-installer.sh "https://raw.githubusercontent.com/your-repo/vpn/main/install.sh"; then
+if curl -sSL -o /tmp/vpn-installer.sh "https://raw.githubusercontent.com/dhyntoh/Coba/refs/heads/main/install.sh"; then
     chmod +x /tmp/vpn-installer.sh
     /tmp/vpn-installer.sh
 else
